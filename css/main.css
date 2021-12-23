@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  background-color: #ffffff;
+  color: #252B42;
+  letter-spacing: 0.1px; }
+
+.inner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.small-title {
+  font-weight: 700;
+  font-size: 24px; }
+  @media screen and (max-width: 770px) {
+    .small-title {
+      font-size: 18px; } }
+
+.medium-title {
+  line-height: 57px;
+  font-size: 40px;
+  font-weight: 700; }
+  @media screen and (max-width: 770px) {
+    .medium-title {
+      font-size: 24px;
+      line-height: 36px; } }
+
+.header__wrapper {
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media screen and (max-width: 770px) {
+    .header__wrapper {
+      height: 90px; } }
+.header__logo {
+  width: 150px;
+  height: 65px; }
+  @media screen and (max-width: 770px) {
+    .header__logo {
+      width: 120px;
+      height: auto; } }
+
+@media screen and (max-width: 770px) {
+  .menu {
+    display: none; } }
+.menu__item {
+  margin-right: 94px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: inherit; }
+  .menu__item:hover {
+    text-decoration: underline; }
+  .menu__item:last-child {
+    margin-right: 39px; }
+  .menu__item--active {
+    color: #FA4A0C; }
+
+.main__wrapper {
+  background-image: url("../img//main-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 600px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center; }
+.main__small-title {
+  padding-top: 80px; }
+.main__title {
+  font-family: 'Poppins';
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  margin-top: 15px; }
+  @media screen and (max-width: 770px) {
+    .main__title {
+      font-size: 36px;
+      line-height: 48px; } }
+.main__description {
+  letter-spacing: 0.2px;
+  font-size: 24px;
+  margin-top: 10px; }
+  @media screen and (max-width: 770px) {
+    .main__description {
+      font-size: 18px; } }
+.main__buttons {
+  margin-top: 54px; }
+.main__button {
+  margin-right: 33px;
+  margin-left: 33px; }
+  @media screen and (max-width: 770px) {
+    .main__button {
+      margin: 0;
+      margin-bottom: 10px; } }
+
+.about__title {
+  font-family: 'Poppins';
+  font-size: 44px;
+  font-weight: 600;
+  padding-top: 56px;
+  text-align: center;
+  width: 100%; }
+  @media screen and (max-width: 770px) {
+    .about__title {
+      font-size: 24px;
+      padding-top: 30px; } }
+
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 110px; }
+  .example__wrapper--reversed {
+    flex-direction: row-reverse; }
+  @media screen and (max-width: 770px) {
+    .example__wrapper {
+      flex-direction: row-reverse;
+      flex-direction: column; } }
+.example__small-title {
+  color: #FA4A0C; }
+.example__medium-title {
+  margin-top: 10px; }
+.example__content {
+  width: 60%;
+  max-width: 575px; }
+  @media screen and (max-width: 770px) {
+    .example__content {
+      width: 100%;
+      text-align: center; } }
+@media screen and (max-width: 770px) {
+  .example__image {
+    width: 140px;
+    height: auto;
+    margin-bottom: 30px; } }
+.example__description {
+  color: #737373;
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 20px; }
+  @media screen and (max-width: 770px) {
+    .example__description {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.button {
+  width: 240px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #FA4A0C;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity 0.25s ease-in-out, color 0.25s ease-in-out; }
+  .button:hover {
+    opacity: 0.8; }
+  .button--secondary {
+    background-color: transparent;
+    border: 1px solid #ffffff; }
+    .button--secondary:hover {
+      background-color: #ffffff;
+      color: #252B42;
+      opacity: 1; }
+  @media screen and (max-width: 770px) {
+    .button {
+      width: 100%; } }
+
+.order__wrapper {
+  height: 509px;
+  background-image: url("../img/ordr-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+.order__description {
+  margin-top: 10px; }
+.order__buttons {
+  margin-top: 50px; }
+.order__button {
+  margin-left: 8px;
+  margin-right: 8px;
+  height: auto;
+  border-radius: 10px;
+  font-size: 16px;
+  width: auto;
+  padding: 20px 30px; }
+
+.footer__wrapper {
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+.footer__copyrights {
+  color: #5C5C5C;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'Roboto'; }
+@media screen and (max-width: 770px) {
+  .footer__logo {
+    width: 120px;
+    height: auto; } }
+
+/*# sourceMappingURL=main.css.map */

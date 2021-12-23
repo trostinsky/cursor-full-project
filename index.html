@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eats Restaurant App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner-wrapper header__wrapper">
+        <a href="#" class="header__link">
+          <img
+            src="./img/logo.svg"
+            width="150"
+            height="65"
+            alt="Eats restaurant"
+            class="header__logo"
+          />
+        </a>
+        <nav class="menu">
+          <a href="#main" class="menu__item menu__item--active"> Home </a>
+          <a href="#about" class="menu__item"> Product </a>
+          <a href="#order" class="menu__item"> Order </a>
+          <a href="#footer" class="menu__item"> Contact </a>
+        </nav>
+      </div>
+    </header>
+    <section class="main__wrapper" id="main">
+      <div class="inner-wrapper main__content wow bounceInUp">
+        <h4 class="main__small-title small-title">Restaurant app</h4>
+        <h1 class="main__title">
+          Why stay hungry when <br />
+          you can order form Eats
+        </h1>
+        <div class="main__description">Order in exchange for hunger</div>
+        <div class="main__buttons">
+          <button class="button main__button">Delivery</button>
+          <button class="button button--secondary main__button">Menu</button>
+        </div>
+      </div>
+    </section>
+    <section class="about__wrapper inner-wrapper" id="about">
+      <h2 class="about__title">How the app works</h2>
+      <div class="example__wrapper">
+        <picture>
+            <source srcset="./img/example-1.webp" type="image/webp">
+            <source srcset="./img/example-1.png" type="image/png"> 
+            <img class="example__image wow fadeInLeft" 
+                 src="./img/example-1.png"
+                 width="250"
+                 height="507"
+                 alt="Example app"
+            >
+        </picture>
+        <div class="example__content wow fadeInRight">
+          <h4 class="example__small-title small-title">Create an account</h4>
+          <h3 class="example__medium-title medium-title">
+            Create/login to an existing account to get started
+          </h3>
+          <div class="example__description">
+            An account is created with your email and a desired password
+          </div>
+        </div>
+      </div>
+      <div class="example__wrapper example__wrapper--reversed">
+        <picture>
+            <source srcset="./img/example-2.webp" type="image/webp">
+            <source srcset="./img/example-2.png" type="image/png"> 
+            <img class="example__image wow fadeInRight" width="250" height="489" src="./img/example-2.png" alt="Example app">
+        </picture>
+        <div class="example__content wow fadeInLeft">
+          <h4 class="example__small-title small-title">Explore varieties</h4>
+          <h3 class="example__medium-title medium-title">
+            Shop for your favorites meal as e dey hot.
+          </h3>
+          <div class="example__description">
+            Shop for your favorite meals or drinks and enjoy while doing it.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order__wrapper" id="order">
+      <h3 class="medium-title order__medium-title wow fadeInUp">Order now.</h3>
+      <div class="order__description wow fadeInUp">
+        Available on your favorite store. Start your premium experience now
+      </div>
+      <div class="order__buttons wow fadeInUp">
+        <a
+          href="https://play.google.com/store?gl=UA&utm_source=emea_Med&utm_medium=hasem&utm_content=Oct2020&utm_campaign=Evergreen&pcampaignid=MKT-EDR-emea-ua-1001280-Med-hasem-py-Evergreen-Oct2020-Text_Search_BKWS%7CONSEM_kwid_43700005660861277&gclid=EAIaIQobChMIgsfaxcX69AIVTwGLCh0uiQCvEAAYASAAEgJ6TfD_BwE&gclsrc=aw.ds"
+          class="button order__button"
+          target="_blank"
+          >Playstore</a
+        >
+        <a
+          href="https://www.apple.com/ua/app-store/"
+          target="_blank"
+          class="button button--secondary order__button"
+          >App store</a
+        >
+      </div>
+    </section>
+    <div class="inner-wrapper">
+        <footer class="footer__wrapper" id="footer">
+            <a href="#" class="footer__link">
+                <img
+                  src="./img/logo.svg"
+                  width="150"
+                  height="65"
+                  alt="Eats restaurant"
+                  class="footer__logo"
+                />
+            </a>
+            <div class="footer__copyrights">
+                Copywright 2020 Bella Onojie.com
+            </div>
+        </footer>
+    </div>
+    <script>
+        new WOW().init({
+            offset: 200
+        });
+    </script>
+  </body>
+</html>
